@@ -1,7 +1,7 @@
 import sublime, sublime_plugin
 import re
 
-DEBUG = False
+DEBUG = True
 
 java_field_pat = "(?P<indent>\s*)" + \
                  "(?P<access>protected|private)" + \
