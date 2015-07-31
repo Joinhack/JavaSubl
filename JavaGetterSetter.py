@@ -75,7 +75,7 @@ class JavaGetterSetterCommand(sublime_plugin.TextCommand):
 
         try:
             properties_text = "\n" + "\n".join(getter_arr) + "\n" + "\n".join(setter_arr)
-            insert_count = self.view.insert(insert_position, "asd")
+            insert_count = self.view.insert("0", properties_text)
             self.view.sel().clear()
             self.view.sel().add(sublime.Region(insert_position, (insert_position + insert_count)))
         except Exception as ex:
