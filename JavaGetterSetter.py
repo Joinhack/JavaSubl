@@ -1,7 +1,7 @@
 import sublime, sublime_plugin
 import re
 
-DEBUG = True
+DEBUG = False
 
 java_field_pat = "(?P<indent>\s*)" + \
                  "(?P<access>protected|private)" + \
@@ -53,12 +53,12 @@ class JavaGetterSetterCommand(sublime_plugin.TextCommand):
 
         getterTemplate = """
 {3}public {1} get{0}() {{
-{3}    return this.{2};
+{3}	return this.{2};
 {3}}}"""
 
         setterTemplate = """
 {3}public void set{0}({1} {2}) {{
-{3}    this.{2} = {2};
+{3}	this.{2} = {2};
 {3}}}"""
 
         for prop in selection_matches:
