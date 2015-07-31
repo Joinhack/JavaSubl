@@ -43,7 +43,6 @@ def getSelections(view):
 
 class JavaGetterSetterCommand(sublime_plugin.TextCommand):
     def run(self, edit):
-        print("start command")
         selections = getSelections(self.view)
         selection_matches = selections["selections"]
         properties = []
@@ -75,7 +74,7 @@ class JavaGetterSetterCommand(sublime_plugin.TextCommand):
             return
 
         try:
-            edit = self.view.begin_edit('java_getter_setter')
+            edit = self.view.begin_edit()
             properties_text = "\n" + "\n".join(getter_arr) + "\n" + "\n".join(setter_arr)
             insert_count = self.view.insert(edit, insert_position, properties_text)
             self.view.sel().clear()
