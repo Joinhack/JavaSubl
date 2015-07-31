@@ -1,0 +1,19 @@
+{
+    "schema_version": "1.2",
+    "packages": [
+        {
+            "name": "JavaSubl",
+            "description": "Sublime Plugin for Java",
+            "author": "Join.Gong",
+            "homepage": "https://github.com/Joinhack/JavaSubl",
+            "platforms": {
+                "*": [
+                    {
+                        "version": "1.0.0",
+                        "url": "https://github.com/Joinhack/JavaSubl/archive/master.zip"
+                    }
+                ]
+            }
+        }
+    ]
+}
