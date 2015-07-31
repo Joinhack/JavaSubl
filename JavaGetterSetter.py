@@ -41,7 +41,7 @@ def getSelections(view):
                 selection_matches.append(md)
     return {"position": position, "selections": selection_matches}
 
-class JavaSetterGetterCommand(sublime_plugin.TextCommand):
+class JavaGetterSetterCommand(sublime_plugin.TextCommand):
     def run(self, edit):
 
         selections = getSelections(self.view)
