@@ -7,7 +7,7 @@
         "id": "java_helper",
         "children":
         [
-            { "command": "java_helper" } 
+            { "command": "java_getter_setter" } 
         ]
     }]
 }
