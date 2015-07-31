@@ -43,7 +43,7 @@ def getSelections(view):
 
 class JavaGetterSetterCommand(sublime_plugin.TextCommand):
     def run(self, edit):
-
+        print("start command")
         selections = getSelections(self.view)
         selection_matches = selections["selections"]
         properties = []
