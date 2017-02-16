@@ -1,5 +1,8 @@
 [
     {
         "keys": ["super+k", "super+j"], "command": "java_getter_setter"
+    },
+    {
+        "keys": ["shift+f6"], "command": "rename_file", "args": { "paths": ["$file"] }
     }
 ]
